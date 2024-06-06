@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-from streamlit_modal import Modal
 import streamlit.components.v1 as components
 
 
