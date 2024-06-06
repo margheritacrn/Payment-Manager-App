@@ -80,7 +80,7 @@ def click(button):
      
 
 # Set title and intialize containers
-st.title('Payment manager') 
+st.title('Task solver') 
 container1 = st.container()
 container2 = st.container()
 container3 = st.container()
