@@ -145,7 +145,6 @@ with container1:
                 
     # sample n worst case scenarios
     if state.clicked_multiple_ws:
-        st.write('Provide number of relative declines for your assets to be sampled from a uniform distribution')
         n_samples = st.number_input(label='Number of samples', min_value=0, max_value=2000, value=state.N_SAMPLES, key='n_samples',
                                     on_change=set_state_value_samp)
         if st.button('Run'):
