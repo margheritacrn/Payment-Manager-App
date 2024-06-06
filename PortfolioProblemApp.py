@@ -116,7 +116,7 @@ with container1:
         st.session_state.show_inputs = False
     
   
-    st.write("Predict wether you will be able to service the debt and commitments in a worst case scenario")
+    st.write("Predict whether you will be able to service the debt and commitments in a worst case scenario")
     col1, col2 = st.columns(2)
     with col1:
         ws = st.button('Choose a worst case scenario', key='ws_button', on_click=click, args=['ws'])
