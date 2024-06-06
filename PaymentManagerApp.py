@@ -82,7 +82,6 @@ def click(button):
 
 # Set title and intialize containers
 st.title('Payment manager') 
-st.write('The app, given the framework described below, allows to predict whether you will be able to service your payments and commitments.')
 container1 = st.container()
 container2 = st.container()
 container3 = st.container()
