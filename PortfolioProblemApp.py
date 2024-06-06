@@ -121,7 +121,7 @@ with container1:
     with col1:
         ws = st.button('Choose a worst case scenario', key='ws_button', on_click=click, args=['ws'])
     with col2:
-        sample_ws = st.button('Sample n worst case scenarios', on_click=click, args=['multiple_ws'])
+        sample_ws = st.button('Sample worst case scenarios', on_click=click, args=['multiple_ws'])
     # single worst case scenario
     if state.clicked_ws:
             st.session_state.show_inputs = True
