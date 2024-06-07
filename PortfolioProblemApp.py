@@ -26,9 +26,9 @@ def predict_service(relative_declines: tuple, verbose=False)-> int:
         return -1
     else:
         for i in range(1,3):
-            donations[i] = donation_factor1*portfolio_coeffs[-1]+ 0.5*donations[i-1]
-            outflows[i] = donations[i]+p_coeff
             portfolio_coeffs[i] = np.round(portfolio_coeffs[i-1] - outflows[i-1],2)
+            donations[i] = donation_factor1*portfolio_coeffs[i]+ 0.5*donations[i-1]
+            outflows[i] = donations[i]+p_coeff
             if(sum(outflows) >= budget):
                 if(verbose):
                     st.write("Your portfolio has exceeded the limit value")
